@@ -1,0 +1,17 @@
+# Core dependencies — required to run decision_engine.ipynb top to bottom
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+openpyxl>=3.1        # used for the .xlsx export helper (save_business_excel)
+
+# Notebook runtime
+jupyter>=1.0
+ipython>=8.20
+
+# Optional — auto-detected by the notebook; it gracefully falls back
+# (skips XGBoost in the model comparison, uses feature_importances_
+# instead of SHAP plots) if these are not installed.
+xgboost>=2.0
+shap>=0.45
